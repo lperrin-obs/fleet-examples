@@ -6,17 +6,3 @@ targetCustomizations:
       env: dev
   kustomize:
     dir: overlays/dev
-
-- name: test
-  clusterSelector:
-    matchLabels:
-      env: test
-  kustomize:
-    dir: overlays/test
-
-- name: prod
-  clusterSelector:
-    matchLabels:
-      env: prod
-  kustomize:
-    dir: overlays/prod
